@@ -9,7 +9,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <Text>Hello, my name is Seweenzy and I welcome you to my first mobile app!</Text>
     </View>
   );
 }
