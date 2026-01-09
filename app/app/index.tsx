@@ -7,7 +7,7 @@ export default function Index() {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        
+        backgroundColor: "#ed7070",
       }}
     >
       <Text style={{ fontSize: 20, fontWeight: "bold", padding:30 }}>Hello, my name is Seweenzy and I welcome you to my first mobile app!</Text>
