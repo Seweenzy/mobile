@@ -7,9 +7,10 @@ export default function Index() {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
+        
       }}
     >
-      <Text>Hello, my name is Seweenzy and I welcome you to my first mobile app!</Text>
+      <Text style={{ fontSize: 20, fontWeight: "bold" }}>Hello, my name is Seweenzy and I welcome you to my first mobile app!</Text>
     </View>
   );
 }
