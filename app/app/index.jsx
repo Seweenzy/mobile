@@ -48,17 +48,17 @@ export default function Index() {
           height: 40,
           justifyContent: "center",
           alignItems: "center",
-          marginTop: 180,
-          borderColor: '#0977a9',
+          marginTop: 150,
+          borderColor: '#075186',
           borderWidth: 1
         }}
       >
-        <Text style={{ color: '#0977a9', fontSize: 14, fontWeight: "bold" }}>
+        <Text style={{ color: '#075186', fontSize: 14, fontWeight: "medium" }}>
           Create new account
         </Text>
       </TouchableOpacity>
 
-    <Image source={('../assets/images/Meta-Logo-3.png')} />
+    <Image source={require('../assets/images/Meta_real.png')} style={{ height: 20, width: 60, alignSelf: 'center', marginTop: 20  }} />
 
     </SafeAreaView>
   );
