@@ -1,6 +1,7 @@
-import { Text, TextInput, TouchableOpacity } from "react-native";
+import { Text, TextInput, TouchableOpacity, Image} from "react-native";
 
 import {SafeAreaView} from 'react-native-safe-area-context';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 export default function Index() {
   return (
@@ -12,18 +13,21 @@ export default function Index() {
         paddingTop: 10,
       }}
     >
-      <Text>English (US)</Text>
+      <TouchableOpacity><Icon name='arrow-left' size={15} color="grey" /></TouchableOpacity>
+      <Text style={{ fontWeight: "medium", fontSize: 12, color:'grey', textAlign:'center', marginTop: 30}}>English (US)  <TouchableOpacity><Icon name="chevron-down" size={12} color="grey" /></TouchableOpacity></Text>
 
-      <TextInput style={{ height: 60, borderColor: 'grey', borderWidth: 1 , borderRadius: 8, margin: 10, paddingLeft: 10}} 
+      <Image source={require('../assets/images/fb_logo.png')} style={{ width: 70, height: 70, alignSelf: 'center', marginTop: 100 }} />
+
+      <TextInput style={{ height: 50, borderColor: '#D3D3D3', borderWidth: 1 , borderRadius: 10, paddingLeft: 10, marginTop:70}} 
       placeholder="Mobile number or email"/>
 
-        <TextInput style={{ height: 60, borderColor: 'grey', borderWidth: 1 , borderRadius: 10, margin: 10, paddingLeft: 10, marginTop: 10}} 
+        <TextInput style={{ height: 50, borderColor: '#D3D3D3', borderWidth: 1 , borderRadius: 10,  paddingLeft: 10, marginTop: 10}} 
       placeholder="Password"/>
 
       <TouchableOpacity
         style={{
           backgroundColor: "#1877F2",
-          height: 50,
+          height: 40,
           borderRadius: 30,
           justifyContent: "center",
           alignItems: "center",
@@ -35,9 +39,24 @@ export default function Index() {
         </Text>
       </TouchableOpacity>
 
-      <Text>Forgot Password?</Text>
+      <Text style={{ marginTop: 10, color: "black", textAlign: "center", fontWeight: "medium", marginTop:20 }}>Forgot Password?</Text>
 
-
+<TouchableOpacity
+        style={{
+          backgroundColor: "white",
+          borderRadius: 30,
+          height: 40,
+          justifyContent: "center",
+          alignItems: "center",
+          marginTop: 180,
+          borderColor: '#5d83f7',
+          borderWidth: 1
+        }}
+      >
+        <Text style={{ color: "#5d83f7", fontSize: 14, fontWeight: "bold" }}>
+          Create new account
+        </Text>
+      </TouchableOpacity>
 
     </SafeAreaView>
   );
