@@ -58,6 +58,8 @@ export default function Index() {
         </Text>
       </TouchableOpacity>
 
+    <Image source={('../assets/images/Meta-Logo-3.png')} />
+
     </SafeAreaView>
   );
 }
