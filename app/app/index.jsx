@@ -1,4 +1,4 @@
-import { Text, TextInput, TouchableOpacity, Image} from "react-native";
+import { Text, TextInput, TouchableOpacity, Image, View} from "react-native";
 
 import {SafeAreaView} from 'react-native-safe-area-context';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -18,16 +18,19 @@ export default function Index() {
 
       <Image source={require('../assets/images/fb_logo.png')} style={{ width: 70, height: 70, alignSelf: 'center', marginTop: 100 }} />
 
-      <TextInput style={{ height: 50, borderColor: '#D3D3D3', borderWidth: 1 , borderRadius: 10, paddingLeft: 10, marginTop:70}} 
-      placeholder="Mobile number or email"/>
+      
+        
+        <TextInput style={{ height: 60, borderColor: '#D3D3D3', borderWidth: 1 , borderRadius: 15, paddingLeft: 10, marginTop:70}} 
+        placeholder="Mobile number or email" />
+      
 
-        <TextInput style={{ height: 50, borderColor: '#D3D3D3', borderWidth: 1 , borderRadius: 10,  paddingLeft: 10, marginTop: 10}} 
+        <TextInput style={{ height: 60, borderColor: '#D3D3D3', borderWidth: 1 , borderRadius: 15,  paddingLeft: 10, marginTop: 10}} 
       placeholder="Password"/>
 
       <TouchableOpacity
         style={{
           backgroundColor: "#1a70e2",
-          height: 40,
+          height: 50,
           borderRadius: 30,
           justifyContent: "center",
           alignItems: "center",
@@ -45,7 +48,7 @@ export default function Index() {
         style={{
           backgroundColor: "white",
           borderRadius: 30,
-          height: 40,
+          height: 50,
           justifyContent: "center",
           alignItems: "center",
           marginTop: 150,
@@ -59,6 +62,7 @@ export default function Index() {
       </TouchableOpacity>
 
     <Image source={require('../assets/images/Meta_real.png')} style={{ height: 20, width: 60, alignSelf: 'center', marginTop: 20  }} />
+
 
     </SafeAreaView>
   );
