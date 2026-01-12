@@ -26,7 +26,7 @@ export default function Index() {
 
       <TouchableOpacity
         style={{
-          backgroundColor: "#1877F2",
+          backgroundColor: "#1a70e2",
           height: 40,
           borderRadius: 30,
           justifyContent: "center",
