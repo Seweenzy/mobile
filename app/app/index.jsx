@@ -31,15 +31,15 @@ export default function Index() {
           borderRadius: 30,
           justifyContent: "center",
           alignItems: "center",
-          marginTop: 8,
+          marginTop: 20,
         }}
       >
-        <Text style={{ color: "white", fontSize: 18, fontWeight: "bold" }}>
+        <Text style={{ color: "white", fontSize: 14, fontWeight: "bold" }}>
           Log In
         </Text>
       </TouchableOpacity>
 
-      <Text style={{ marginTop: 10, color: "black", textAlign: "center", fontWeight: "medium", marginTop:20 }}>Forgot Password?</Text>
+      <Text style={{ marginTop: 10, color: "black", textAlign: "center", fontWeight: "medium", marginTop:15 }}>Forgot Password?</Text>
 
 <TouchableOpacity
         style={{
@@ -49,11 +49,11 @@ export default function Index() {
           justifyContent: "center",
           alignItems: "center",
           marginTop: 180,
-          borderColor: '#5d83f7',
+          borderColor: '#0977a9',
           borderWidth: 1
         }}
       >
-        <Text style={{ color: "#5d83f7", fontSize: 14, fontWeight: "bold" }}>
+        <Text style={{ color: '#0977a9', fontSize: 14, fontWeight: "bold" }}>
           Create new account
         </Text>
       </TouchableOpacity>
