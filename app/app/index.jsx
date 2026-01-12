@@ -16,7 +16,7 @@ export default function Index() {
       <TouchableOpacity><Icon name='arrow-left' size={15} color="grey" /></TouchableOpacity>
       <Text style={{ fontWeight: "medium", fontSize: 12, color:'grey', textAlign:'center', marginTop: 30}}>English (US)  <TouchableOpacity><Icon name="chevron-down" size={12} color="grey" /></TouchableOpacity></Text>
 
-      <Image source={require('../assets/images/fb_logo.png')} style={{ width: 70, height: 70, alignSelf: 'center', marginTop: 100 }} />
+      <Image source={require('../assets/images/facebook-logo.jpg')} style={{ width: 80, height: 90, alignSelf: 'center', marginTop: 100, }} />
 
       
         
