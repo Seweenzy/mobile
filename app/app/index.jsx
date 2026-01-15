@@ -13,15 +13,16 @@ export default function Index() {
   
   const [lightMode,setlightMode]=useState(true)
   
-  const[email, setEmail]= useState('')
+  {/*const[email, setEmail]= useState('')
 
-  console.log(email)
+  console.log(email) */}
+  
 
   return (
     <SafeAreaView
       style={{
         flex: 1,
-        backgroundColor: lightMode ? 'pink': 'grey',
+        backgroundColor: lightMode ? 'orange': 'grey',
         paddingHorizontal: 20,
         paddingTop: 10,
       }}
@@ -88,11 +89,13 @@ export default function Index() {
     <View style={{marginTop:40, gap:20}}>
        <Input type= {'default'}label ={'Full name'} placeholder={'Enter your full name'}/>
      <Input type= {'email-address'}label ={'Email address'} placeholder={'Enter your email address'}/>
+       <Input type= {'name-phone-pad'} label ={'House address'} placeholder={'Enter your house address'}/>
      <Input type= {'number-pad'} label ={'Phone number'} placeholder={'Enter your phone number'}/>
+   
     </View>
 
     <TouchableOpacity onPress={()=>setlightMode(!lightMode)} style={{backgroundColor:'blue', height: 50, justifyContent:'center',
-       marginTop:40, borderRadius:15
+       marginTop:100, borderRadius:15
         }}>
 
       <Text style={{alignSelf:'center', color:'white', fontWeight:'bold', fontSize:18}}>Submit</Text>
