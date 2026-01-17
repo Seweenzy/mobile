@@ -1,18 +1,20 @@
 import { TouchableOpacity, Text } from "react-native"
 
 
-const Button=({text, style})=>{
 
-    return (
+const Button =({text, style})=>{
 
-        <TouchableOpacity style={{backgroundColor:'purple', height:50, justifyContent:'center', borderRadius:12, ...style}}>
+    return(
+        <TouchableOpacity style={{backgroundColor:'purple', height:50,
+        borderRadius:12, justifyContent:'center', ...style }}
+        > 
 
-        <Text style={{alignSelf:'center'}}>{text}</Text>
+            <Text style={{alignSelf:'center', fontSize:15, color: 'white'}}>{text}</Text>
 
         </TouchableOpacity>
-        
+
+
     )
 }
 
 export default Button;
-

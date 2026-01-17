@@ -1,107 +1,53 @@
-import { Text, TextInput, TouchableOpacity, Image, View} from "react-native";
+import{Text, View, TextInput, TouchableOpacity} from "react-native";
+import{SafeAreaView} from "react-native-safe-area-context";
 
-import {SafeAreaView} from 'react-native-safe-area-context';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import{useState} from 'react';
 
+import Input from '../components/input';
 import Button from "../components/button";
-import Input from "../components/input";
 
-import {useState} from 'react'
+ 
 
-export default function Index() {
+export default function(){
 
-  
-  const [lightMode,setlightMode]=useState(true)
-  
-  {/*const[email, setEmail]= useState('')
+    const [lightMode, setlightMode] =useState(true)
 
-  console.log(email) */}
-  
+    return(
 
-  return (
-    <SafeAreaView
-      style={{
-        flex: 1,
-        backgroundColor: lightMode ? 'orange': 'grey',
-        paddingHorizontal: 20,
-        paddingTop: 10,
-      }}
-    >{/*
-      <TouchableOpacity><Icon name='arrow-left' size={15} color="grey" /></TouchableOpacity>
-      <Text style={{ fontWeight: "medium", fontSize: 12, color:'grey', textAlign:'center', marginTop: 30}}>English (US)  <TouchableOpacity><Icon name="chevron-down" size={12} color="grey" /></TouchableOpacity></Text>
+        <SafeAreaView
+        style={{backgroundColor:lightMode ? 'pink' : 'orange', 
+            flex:1,
+            paddingHorizontal:10,
+            
+        }}
+        >
 
-      <Image source={require('../assets/images/facebook-logo.jpg')} style={{ height:100, width: 100, alignSelf: 'center', marginTop: 10, }} />
 
-      
+        <View style={{gap:40, marginTop:20}}> 
+
+        <Input type={'default'} label={'Full Name'} placeholder={'Enter your full name'}/>
+        <Input type={'email-address'}label={'Email Address'}placeholder={'Enter your email address'}/>
+        <Input type={'number-pad'} label={'Phone Number'} placeholder={'Enter your phone number'}/>
         
-        <TextInput onChangeText={(text)=>{setEmail(text)}} style={{ height: 60, borderColor: '#D3D3D3', borderWidth: 1 , borderRadius: 15, paddingLeft: 10, marginTop:10}} 
-        placeholder="Mobile number or email" />
-      
 
-        <TextInput style={{ height: 60, borderColor: '#D3D3D3', borderWidth: 1 , borderRadius: 15,  paddingLeft: 10, marginTop: 10}} 
-      placeholder="Password"/>
+        </View>
 
-     <TouchableOpacity  onPress={()=>setlightMode(!lightMode)}
-        style={{
-          backgroundColor: "#1a70e2",
-          height: 50,
-          borderRadius: 30,
-          justifyContent: "center",
-          alignItems: "center",
-          marginTop: 20,
-        }}
-      >
-        <Text style={{ color: "white", fontSize: 14, fontWeight: "bold" }}>
-          Log In
-        </Text>
-      </TouchableOpacity>
 
-      <Text style={{ marginTop: 10, color: "black", textAlign: "center", fontWeight: "medium", marginTop:15 }}>Forgot Password?</Text>
+        <TouchableOpacity onPress={()=>setlightMode(!lightMode)} 
+        style={{backgroundColor:'green', height:50, justifyContent:'center', 
+            marginTop:30, borderRadius:12}}>
+            <Text style={{alignSelf:'center', color:'white', fontWeight:'bold', fontSize:16}}>Submit</Text>
+        </TouchableOpacity>
 
-<TouchableOpacity
-        style={{
-          backgroundColor: "white",
-          borderRadius: 30,
-          height: 50,
-          justifyContent: "center",
-          alignItems: "center",
-          marginTop: 10,
-          borderColor: '#075186',
-          borderWidth: 1
-        }}
-      >
-        <Text style={{ color: '#075186', fontSize: 14, fontWeight: "medium" }}>
-          Create new account
-        </Text>
-      </TouchableOpacity>
 
-   <Image source={require('../assets/images/Meta_real.png')} style={{ height: 20, width: 60, alignSelf: 'center', marginTop: 20  }} />
-      
+        <View style={{marginTop:60, gap:20}}>
+            <Button style={{backgroundColor:'blue'}} text={'Sign Up!'}/>
+            <Button style={{backgroundColor:'orange'}} text={'Log In!'}/>
+            <Button style={{backgroundColor:'purple'}} text={'Click Me!'}/>
+            <Button style={{backgroundColor:'grey', fontSize:22}} text={'Press Me!'}/>
+            </View>
 
-     <View style={{gap:20}}>
-       <Button  style={{backgroundColor:'blue', marginTop:20}} text={'Click Me'}/>
-      <Button style={{backgroundColor:'grey'}} text={'Press Me'}/>
-      <Button style={{backgroundColor:'orange'}} text={'Sign Up'}/>
-      <Button style={{backgroundColor:'pink'}}text={'Sign In'}/>
-     </View>
-     */}
+        </SafeAreaView>
 
-    <View style={{marginTop:40, gap:20}}>
-       <Input type= {'default'}label ={'Full name'} placeholder={'Enter your full name'}/>
-     <Input type= {'email-address'}label ={'Email address'} placeholder={'Enter your email address'}/>
-       <Input type= {'name-phone-pad'} label ={'House address'} placeholder={'Enter your house address'}/>
-     <Input type= {'number-pad'} label ={'Phone number'} placeholder={'Enter your phone number'}/>
-   
-    </View>
-
-    <TouchableOpacity onPress={()=>setlightMode(!lightMode)} style={{backgroundColor:'blue', height: 50, justifyContent:'center',
-       marginTop:100, borderRadius:15
-        }}>
-
-      <Text style={{alignSelf:'center', color:'white', fontWeight:'bold', fontSize:18}}>Submit</Text>
-
-    </TouchableOpacity>
-
-    </SafeAreaView>
-  );
+    )
 }
