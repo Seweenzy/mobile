@@ -44,7 +44,7 @@ export default function(){
             <Button style={{backgroundColor:'blue'}} text={'Sign Up!'}/>
             <Button style={{backgroundColor:'orange'}} text={'Log In!'}/>
             <Button style={{backgroundColor:'purple'}} text={'Click Me!'}/>
-            <Button style={{backgroundColor:'grey', fontSize:22}} text={'Press Me!'}/>
+            <Button style={{backgroundColor:'grey'}} text={'Press Me!'}/>
             </View>
 
         </SafeAreaView>
