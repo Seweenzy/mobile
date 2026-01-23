@@ -1,7 +1,8 @@
-import{Text, View, TextInput, TouchableOpacity} from "react-native";
+import{Text, View, TouchableOpacity} from "react-native";
 import{SafeAreaView} from "react-native-safe-area-context";
 
 import{useState} from 'react';
+import {router} from "expo-router";
 
 import Input from '../components/input';
 import Button from "../components/button";
@@ -41,7 +42,9 @@ export default function(){
 
 
         <View style={{marginTop:60, gap:20}}>
-            <Button style={{backgroundColor:'blue' }} text={'Sign Up!'}/>
+            <Button  onPress={() => {
+                router.push('./signin')  
+                }} style={{backgroundColor:'blue' }} text={'Sign Up!'}/>
             <Button style={{backgroundColor:'orange'}} text={'Log In!'}/>
             <Button style={{backgroundColor:'purple'}} text={'Click Me!'}/>
             <Button style={{backgroundColor:'grey'}} text={'Press Me!'}/>

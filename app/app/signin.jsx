@@ -5,7 +5,7 @@ import Icon from "react-native-vector-icons/FontAwesome";
 
 export default function Index(){
     return (
-        <SafeAreaView
+        <View
         style={{
             backgroundColor:"white",
             flex:1,
@@ -13,7 +13,7 @@ export default function Index(){
             paddingTop:10
         }}
         >
-            <TouchableOpacity><Icon name='arrow-left' size={15} color='grey'/></TouchableOpacity>
+            <TouchableOpacity onPress={() => {router.back()}}><Icon name='arrow-left' size={15} color='grey'/></TouchableOpacity>
 
         <Text style={{color:'grey', fontSize:12, TextAlign: 'center', marginTop:30}}>English (US)</Text> <TouchableOpacity><Icon name='chevron-down' size={12} color='grey'></Icon></TouchableOpacity>
 
@@ -57,7 +57,7 @@ export default function Index(){
             
         </TouchableOpacity>
 
-        </SafeAreaView>
+        </View>
 
     )
 }
