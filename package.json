@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "react-devtools": "^7.0.1"
+  },
+  "dependencies": {
+    "expo": "^55.0.17",
+    "react-native": "^0.85.2"
+  }
+}
