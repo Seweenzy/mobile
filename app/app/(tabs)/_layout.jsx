@@ -35,7 +35,7 @@ const TabsLayout = () => {
             tabBarIcon: ({ name, size, focused, color }) => (
               <Ionicons
                 name={name ? "home" : "home-outline"}
-                size={focused ? 18 : size + 5}
+                size={!focused ? 18 : size + 5}
                 color={color}
               />
             ),
@@ -49,7 +49,7 @@ const TabsLayout = () => {
             tabBarIcon: ({ name, size, focused, color }) => (
               <Feather
                 name={name ? "search" : "search"}
-                size={focused ? 18 : size + 5}
+                size={!focused ? 18 : size + 5}
                 color={color}
               />
             ),
@@ -62,7 +62,7 @@ const TabsLayout = () => {
             tabBarIcon: ({ name, focused, size, color }) => (
               <Ionicons
                 name={name ? "settings" : "settings-outline"}
-                size={focused ? 18 : size + 5}
+                size={!focused ? 18 : size + 5}
                 color={color}
               />
             ),
@@ -75,7 +75,7 @@ const TabsLayout = () => {
             tabBarIcon: ({ name, focused, size, color }) => (
               <Ionicons
                 name={name ? "people" : "people-outline"}
-                size={focused ? 18 : size + 5}
+                size={!focused ? 18 : size + 5}
                 color={color}
               />
             ),

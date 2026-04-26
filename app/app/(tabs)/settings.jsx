@@ -12,7 +12,7 @@ const Settings = () => {
           router.push("../account");
         }}
         style={{
-          height: 50,
+          height: 60,
           backgroundColor: "red",
           marginHorizontal: 20,
           alignItems: "center",
@@ -21,7 +21,26 @@ const Settings = () => {
           marginTop: "50",
         }}
       >
-        <Text>Go to Settings Account Page!</Text>
+        <Text>Go to Settings Manage Subscriptions Page!</Text>
+      </Pressable>
+
+      <Pressable
+        onPress={() => {
+          router.push("../manage-subscriptions");
+        }}
+        style={{
+          height: 60,
+          backgroundColor: "red",
+          marginHorizontal: 20,
+          alignItems: "center",
+          justifyContent: "center",
+          borderRadius: 20,
+          marginTop: "50",
+        }}
+      >
+        <Text style={{ color: "white" }}>
+          Go to Settings Manage Subscription Page!
+        </Text>
       </Pressable>
     </SafeAreaView>
   );
