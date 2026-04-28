@@ -17,10 +17,7 @@ const TabsLayout = () => {
           tabBarInactiveColor: "#49454f",
           tabBarActiveColor: "#004ea3",
           tabBarStyle: {
-            borderRadius: 30,
             position: "absolute",
-            marginBottom: 8,
-            marginHorizontal: 20,
           },
           tabBarIconStyle: { marginTop: 10 },
           tabBarLabelStyle: {
